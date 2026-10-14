@@ -1,13 +1,15 @@
 
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 
 const open = ref(1) // 1 ouvert par défaut
 
-function toggle(id) {
+function toggle(id: number) {
+  const open = ref<number | null>(1)
   open.value = open.value === id ? null : id
 }
+
 </script>
 
 <template>
@@ -89,7 +91,7 @@ function toggle(id) {
 
 <style scope>
 
-@import "tailwindcss";
+
 
 .title {
     display: flex;
