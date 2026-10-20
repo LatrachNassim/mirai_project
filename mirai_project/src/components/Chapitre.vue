@@ -19,7 +19,7 @@ function toggle(id: number) {
  
   <main>
 
-    <h1>Chapitre</h1>
+    <h1 class="title">Chapitre</h1>
 
     <div class="accordion">
 
@@ -90,7 +90,7 @@ function toggle(id: number) {
 
 
 
-<style scope>
+<style scoped>
 
 
 
