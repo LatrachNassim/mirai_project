@@ -18,18 +18,16 @@ function toggle(id: number) {
     
  
   <main>
+    <div>
 
-    <h1 class="title">Chapitre</h1>
+    <h1 class="text-center uppercase" >Chapitre</h1>
+    <div>
+      <div class="flex justify-between p-3">
+        <h2 class="font-bold">Chapitre 1</h2>
+        <button @click="toggle(1)" class="cursor-pointer" :class="{'rotate-90': open === 1}">▸</button>
+      </div>
 
-    <div class="accordion">
-
-      <!-- ITEM 1 -->
-      <div class="item">
-        <button @click="toggle(1)">
-          Chapitre 1
-        </button>
-
-        <div v-show="open === 1" class="content">
+        <div v-show="open === 1" class="p-2.5 border border-[#C4C4C4]">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, error. Sequi velit perspiciatis excepturi modi voluptas facere ipsum sit fuga, voluptate, libero adipisci provident rerum fugit iure odio cupiditate. Vero?
           </p>
@@ -43,12 +41,12 @@ function toggle(id: number) {
       </div>
 
       <!-- ITEM 2 -->
-      <div class="item">
-        <button @click="toggle(2)">
-          Chapitre 2
-        </button>
+      <div class="flex justify-between p-3">
+        <h2 class="font-bold">Chapitre 2</h2>
+        <button @click="toggle(2)" class="cursor-pointer" :class="{'rotate-90': open === 2}">▸</button>
+      </div>
 
-        <div v-show="open === 2" class="content">
+        <div v-show="open === 2" class="p-2.5 border border-[#C4C4C4]">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reprehenderit quia odio nostrum, excepturi vel aliquid cum libero ea iusto, eligendi voluptatibus architecto, itaque debitis at deleniti accusantium officiis deserunt.
           </p>
@@ -61,12 +59,12 @@ function toggle(id: number) {
       </div>
 
       <!-- ITEM 3 -->
-      <div class="item">
-        <button @click="toggle(3)">
-          Chapitre 3
-        </button>
+      <div class="flex justify-between p-3">
+        <h2 class="font-bold">Chapitre 3</h2>
+        <button @click="toggle(3)" class="cursor-pointer" :class="{'rotate-90': open === 3}">▸</button>
+      </div>
 
-        <div v-show="open === 3" class="content">
+        <div v-show="open === 3" class="p-2.5 border border-[#C4C4C4]">
           <p>
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta exercitationem itaque quae architecto facere quo minima distinctio obcaecati fugiat expedita, natus molestias consequatur culpa soluta sapiente vitae. Ea, illum molestias.
           </p>
@@ -94,18 +92,9 @@ function toggle(id: number) {
 
 
 
-.title {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
 
-}
 
-.accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
 
 button {
   width: 100%;
@@ -114,9 +103,6 @@ button {
   font-weight: bold;
 }
 
-.content {
-  padding: 10px;
-  border: 1px solid #ddd;
-}
+
 
 </style>
