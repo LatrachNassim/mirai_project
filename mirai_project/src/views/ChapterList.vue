@@ -32,7 +32,9 @@ function toggle(id: number) {
 
         <!-- (B) la ligne : titre + flèche -->
         <div class="flex justify-between p-3">
-          <h2 class="font-bold">{{ chapter.title }}</h2>
+          <h2 class="font-bold">
+            <RouterLink  :to="`/chapitre/${chapter.id}`">{{ chapter.title }}</RouterLink>
+          </h2>
           <button @click="toggle(chapter.id)" class="cursor-pointer"
             :class="{ 'rotate-90': open === chapter.id }">▸</button>
         </div>
