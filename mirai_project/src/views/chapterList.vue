@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import chapters  from '../data/ChaptersData'
+import chapters  from '../data/chaptersData'
 
 const open = ref<number | null>(1) // 1 ouvert par défaut
 
