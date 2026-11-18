@@ -2,8 +2,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 // 2. Tes pages
-import ChapterList from './views/ChapterList.vue'
-import ChapterPage from './views/ChapterPage.vue'
+import ChapterList from './views/chapterList.vue'
+import ChapterPage from './views/chapterPage.vue'
 
 // 3. La liste des routes : un tableau d'objets
 const routes = [

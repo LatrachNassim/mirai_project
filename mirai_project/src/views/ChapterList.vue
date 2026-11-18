@@ -1,13 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import chapters  from '../data/ChaptersData'
 
 const open = ref<number | null>(1) // 1 ouvert par défaut
 
-const chapters = [
-  { id: 1, title: "Chapitre 1", summary: "Résume chapitre 1" },
-  { id: 2, title: "Chapitre 2", summary: "Résume chapitre 2" },
-  { id: 3, title: "Chapitre 3", summary: "Résume chapitre 3" }
-]
+
 
 
 
