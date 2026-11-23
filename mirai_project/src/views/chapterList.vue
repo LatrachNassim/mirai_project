@@ -3,11 +3,6 @@ import { ref } from 'vue'
 import chapters  from '../data/chaptersData'
 
 const open = ref<number | null>(1) // 1 ouvert par défaut
-
-
-
-
-
 function toggle(id: number) {
   open.value = open.value === id ? null : id
 }
